@@ -1,0 +1,37 @@
+{
+  "name": "voice-agent-hotel-supplies",
+  "version": "1.0.0",
+  "description": "AI-powered voice agent for hotel supplies sales",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "cd client && npm install && npm run build",
+    "dev": "npm run build && node server.js",
+    "server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "microsoft-cognitiveservices-speech-sdk": "^1.44.0",
+    "openai": "^4.20.1",
+    "socket.io": "^4.7.4",
+    "twilio": "^4.19.3"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.2"
+  },
+  "keywords": [
+    "voice-agent",
+    "twilio",
+    "openai",
+    "hotel-supplies"
+  ],
+  "author": "Hotel Supplies Voice Agent",
+  "license": "MIT"
+}
