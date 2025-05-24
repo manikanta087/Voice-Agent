@@ -278,7 +278,7 @@ app.post('/api/voice/incoming', async (req, res) => {
 
     console.time('OpenAI Response');
     const completion = await openai.chat.completions.create({
-      model: process.env.OPENAI_MODEL || "gpt-4", // Allow easy switching to gpt-3.5-turbo
+      model: process.env.OPENAI_MODEL || "gpt-3.5-turbo", // Allow easy switching to gpt-3.5-turbo
       messages: trimmedConversation,
       max_tokens: 150,
       temperature: 0.7,
